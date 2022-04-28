@@ -1,0 +1,15 @@
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/bin/Debug/net6.0/Algoritmos y Estructura de Datos
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/bin/Debug/net6.0/Algoritmos y Estructura de Datos.deps.json
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/bin/Debug/net6.0/Algoritmos y Estructura de Datos.runtimeconfig.json
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/bin/Debug/net6.0/Algoritmos y Estructura de Datos.dll
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/bin/Debug/net6.0/Algoritmos y Estructura de Datos.pdb
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.csproj.AssemblyReference.cache
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.GeneratedMSBuildEditorConfig.editorconfig
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.AssemblyInfoInputs.cache
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.AssemblyInfo.cs
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.csproj.CoreCompileInputs.cache
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.dll
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/refint/Algoritmos y Estructura de Datos.dll
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.pdb
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/Algoritmos y Estructura de Datos.genruntimeconfig.cache
+/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/Debug/net6.0/ref/Algoritmos y Estructura de Datos.dll

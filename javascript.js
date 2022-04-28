@@ -29,13 +29,14 @@ como elemento de una lista.
 
 let frase =  "Hola Mundo, esto es javascript" //prompt('Ingrese una frase');
 let lista = [];
-
+/*/
 for (let i = 0; i < frase.length; i++) {
     lista.push(frase[i]);
 }
 console.log(lista);
-
-
+/*/
+var arr = JSON.parse("[" + frase+ "]");
+console.log(arr);
 
 
 
