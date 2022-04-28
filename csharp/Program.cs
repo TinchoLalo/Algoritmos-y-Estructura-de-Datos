@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 // imprimir "hola mundo" en consola
 Console.WriteLine("Hola Mundo");
 
