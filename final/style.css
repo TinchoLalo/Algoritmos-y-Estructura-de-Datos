@@ -1,0 +1,63 @@
+body{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-family: "arial";
+    color: #006699;
+}
+.subtitle {
+    font-size: 1.5rem;
+    font-family: "arial";
+    color: #495257;
+}
+
+.table {
+    font-size: 1.2rem;
+    font-family: "arial";
+    color: #495257;
+    text-align: left;
+}
+
+#planes table {
+    margin: 4rem;
+    display: inline-block;
+    background: #00669923;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: "arial";
+    color: #006699;
+}
+
+#crear {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 8rem;
+    font-family: "arial";
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+    margin: 2rem;
+    cursor: pointer;
+    color: #006699;
+    background-color: #ffffff;
+    border: solid 0.3rem #006699;
+    /*/animacion suave /*/
+    transition: all 0.3s ease-in-out;
+}
+#crear:hover{
+    color: #ffffff;
+    background-color: #006699;
+    border: solid 0.3rem #006699;
+}
+
+#crearPlan textarea {
+    width: 9.2rem;
+}

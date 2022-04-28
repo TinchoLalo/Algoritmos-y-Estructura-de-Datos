@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 class="title">Centro de alto rendimiento</h1>
+    <h2 class="subtitle">Planes de rendimiento</h2>
+    <br>
+
+    <input type="text" id="buscar" placeholder="🔎 Buscar plan">
+    <input type="text" id="filtro" placeholder="seleccionar campo" list="filter">
+    <datalist id="filter">
+        <option value="clave"></option>
+        <option value="nombre"></option>
+        <option value="precio"></option>
+        <option value="tipo"></option>
+        <option value="edad"></option>
+    </datalist>
+    <button id="search">Buscar</button>
+    
+
+    <div id="crearPlan">
+        <table class="table">
+            <tr>
+                <h3>Crear nuevo plan</h3>
+                
+            <tr>
+                <td>Clave de Identificación: </td>
+                <td><input type="text" id="clave"></td>
+            </tr>
+    
+            <tr>
+                <td>Nombre del Plan: </td>
+                <td><input type="text" id="nombre"></td>
+            </tr>
+    
+            <tr>
+                <td>Descripción: </td>
+                <td><textarea type="text" id="des"></textarea></td>
+            </tr>
+    
+            <tr>
+                <td>Monto a abonar: </td>
+                <td><input type="text" id="precio"></td>
+            </tr>
+    
+            <tr>
+                <td>Tipo de plan: </td>
+                <td><input type="number" id="tipo" placeholder="del 1 al 10"></td>
+            </tr>
+    
+            <tr>
+                <td>Edad recomendada: </td>
+                <td><input type="number" id="edad" placeholder="del 1 al 5"></td>
+            </tr>
+    
+        </table>
+    
+        <button id="crear"> Crear Plan</button>
+    </div>
+
+    <div id="planes">
+        
+    </div>
+    
+
+    <script src="index2.js"></script>
+</body>
+
+</html>
