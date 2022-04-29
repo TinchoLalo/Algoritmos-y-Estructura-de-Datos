@@ -84,6 +84,15 @@ for i in range(pisos):
     # imprimir los pisos
     print(piramide)
     
+''' 
+for i in range(pisos):
+    line= i
+    space = pisos-i
+    
+    piramide = " "*space+estilo*line 
+    # imprimir los pisos
+    print(piramide)
+'''
     
 
 ''' 
