@@ -1,8 +1,6 @@
 // imprimir "hola mundo" en consola
 console.log('Hola Mundo');
 
-
-
 /*/====================================================
 7. Permitir ingresar al usuario un numero de un digito. Controlando se haya ingresado dicho
 numero de no mas de 1 digito de longitud, pasarlo a letras y mostrarlo en pantalla.
@@ -29,14 +27,13 @@ como elemento de una lista.
 
 let frase =  "Hola Mundo, esto es javascript" //prompt('Ingrese una frase');
 let lista = [];
-/*/
+
 for (let i = 0; i < frase.length; i++) {
     lista.push(frase[i]);
 }
 console.log(lista);
-/*/
-var arr = JSON.parse("[" + frase+ "]");
-console.log(arr);
+
+
 
 
 

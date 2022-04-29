@@ -29,19 +29,7 @@ print("12) ",palabra11)
 
 
 
-''' 
-16. Dada una lista de numeros, ingresada por el usuario o inventada por usted, cree otra lista
-con la cantidad de digitos de cada numero de la misma.
-'''
 
-lisNum16 = [1,2,3,4,5]
-lista16 = []
-i =0
-
-while(i<len(lisNum16)):
-    lista16.append(int(input("16) Ingrese un numero: ")))
-    i += 1
-print("16) ",lista16)
 
 
 ''' 17. Tirar 20 veces un dado de 6 caras. Mostrar el promedio de esas 20 tiradas. '''
