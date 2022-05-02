@@ -1,20 +1,16 @@
-pisos = int(input('Ingresa en número la altura de la piramide: '))
-estilo = input('Ingresa el estilo de la piramide: ')
+'''
+11. Realizar un programita que le pida ingresar una frase al usuario y coloque cada palabra de la misma como elemento de una lista.
+'''
+frase11 = str(input("11) Ingrese una frase: "))
+palabra11 = []
+palabra = ""
+j = 0
 
-piramide = ""
-
-for i in range(pisos):
-    line= i
-    space = pisos-i
-    
-    piramide = " "*space + estilo*line +estilo*line  
-    # imprimir los pisos
-    print(piramide)
-    
-for i in range(pisos):
-    line= i
-    space = pisos-i
-    
-    piramide = " "*space+estilo*line 
-    # imprimir los pisos
-    print(piramide)
+for i,value in enumerate(frase11):
+    if (frase11[i] == ' '):
+        palabra11.append(frase11[j:i])
+        j = i+1
+    elif (i == len(frase11)-1):
+        palabra11.append(frase11[j:i+1])
+        j = i+1
+print("11) ",palabra11)

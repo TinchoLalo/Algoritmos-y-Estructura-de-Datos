@@ -144,3 +144,26 @@ function contarPares(a, b) {
         }
     }return cont
 }console.log(contarPares(1, 10));
+
+
+
+
+
+let numero24 = ''
+let lista24 = []
+while(numero24 != "s"){
+    numero24 = input("24) Ingrese un numero: ")
+    lista24.push(numero24.ToNumber())
+    
+}
+console.log(lista24)
+
+
+/*/ 
+numero24 = ''
+lista24 = []
+while(numero24 != "s"):
+    numero24 = input("24) Ingrese un numero: ")º
+    lista24.append(int(numero24))
+print(lista24)
+/*/

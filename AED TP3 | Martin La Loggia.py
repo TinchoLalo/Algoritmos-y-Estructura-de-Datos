@@ -161,23 +161,25 @@ print("10) Los nombres que empiezan con la letra M son: ",nombres10m)
 
 
 '''
-11. Realizar un programita que le pida ingresar una frase al usuario y coloque cada palabra
-de la misma como elemento de una lista.
+11. Realizar un programita que le pida ingresar una frase al usuario y coloque cada palabra de la misma como elemento de una lista.
 '''
-
 frase11 = str(input("11) Ingrese una frase: "))
 palabra11 = []
+palabra = ""
+j = 0
 
 for i,value in enumerate(frase11):
     if (frase11[i] == ' '):
-        palabra11.append(frase11[i-1])
-        palabra11.append(frase11[i+1])
+        palabra11.append(frase11[j:i])
+        j = i+1
+    elif (i == len(frase11)-1):
+        palabra11.append(frase11[j:i+1])
+        j = i+1
 print("11) ",palabra11)
 
 
 '''
-12. Realizar un programita que le pida ingresar una frase al usuario y coloque cada letra
-como elemento de una lista.
+12. Realizar un programita que le pida ingresar una frase al usuario y coloque cada letra como elemento de una lista.
 '''
 frase11 = str(input("11) Ingrese una frase: "))
 palabra11 = []
@@ -188,16 +190,15 @@ print("11) ",palabra11)
 
 
 '''
-13. El usuario deberia poder ingresar varios nombres completos (ejemplo: ”Luis Perez”). El
-programa deberia luego, colocar los nombres en una lista y los apellidos en otra.
+13. El usuario deberia poder ingresar varios nombres completos (ejemplo: ”Luis Perez”). El programa deberia luego, colocar los nombres en una lista y los apellidos en otra.
 '''
 nombre13 = str(input("13) Ingrese su nombre completo: "))
-
 nom13 = nombre13.split()
 nomList13 = []
 app13 = nom13[1::]
 nomList13.append(nom13[0])
 print("13) ",nomList13,app13)
+    
 
 
 '''14. Se deberian ingresar 8 notas. Se mostraria el promedio, redondeado a 2 decimales.'''
@@ -439,14 +440,26 @@ una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numera
 ejemplo, si se ingresa 7, se deberia ver en pantalla:
 '''
 
-pisos = int(input('Ingresa en número la altura de la piramide: '))
 
-for i in range(0,pisos+1):
-    par =  i%2==0 
+base = int(input('Ingresa en número la longitud de la base de la piramide: '))
+estilo = str(input('Ingresa el estilo de la piramide: '))
+pisos = round(base/2)
+piramide = []
+for i in range(pisos):
+    piramide.append(' '*i + estilo*(base-2*i))
+for i in reversed(piramide):
+    print(i)
+    
+    
+# otro método
+pisos = int(input('Ingresa en número la altura de la piramide: '))
+pisos = round(pisos/2)
+
+for i in range(0,pisos):
     line= i+1
     space = pisos-i
     # imprimir los pisos
-    print(' '*space+'#'*line)
+    print(' '*space+'#'*line+'#'*line)
     
     
 
