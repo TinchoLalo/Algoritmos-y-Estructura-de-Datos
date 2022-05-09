@@ -1,11 +1,10 @@
 // imprimir "hola mundo" en consola
 console.log('Hola Mundo');
 
-/*/====================================================
-7. Permitir ingresar al usuario un numero de un digito. Controlando se haya ingresado dicho
-numero de no mas de 1 digito de longitud, pasarlo a letras y mostrarlo en pantalla.
+/* ====================================================
+7. Permitir ingresar al usuario un numero de un digito. Controlando se haya ingresado dicho numero de no mas de 1 digito de longitud, pasarlo a letras y mostrarlo en pantalla.
 (Ejemplo: Si ingresa 3, se veria como resultado ”tres”).
-====================================================/*/
+==================================================== */
 
 let digito = prompt('Ingrese un numero de un digito');
 let numLetras = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve'];
@@ -20,10 +19,9 @@ else{
 
 
 
-/*/==================================================== 
-12. Realizar un programita que le pida ingresar una frase al usuario y coloque cada letra
-como elemento de una lista.
-====================================================/*/
+/* ==================================================== 
+12. Realizar un programita que le pida ingresar una frase al usuario y coloque cada letra como elemento de una lista.
+==================================================== */
 
 let frase =  "Hola Mundo, esto es javascript" //prompt('Ingrese una frase');
 let lista = [];
@@ -36,10 +34,9 @@ console.log(lista);
 
 
 
-
-/*/ ====================================================
+/* ====================================================
 17. Tirar 20 veces un dado de 6 caras. Mostrar el promedio de esas 20 tiradas. 
-=====================================================/*/
+===================================================== */
 
 
 let dado= [];
@@ -71,10 +68,9 @@ console.log(promedio/20);
 
 
 
-/*/ ==================================================== 
-6) Permita al usuario ingresar el nombre de un archivo, genere un nuevo nombre donde los
-espacios sean reemplazados por guion bajo y la extension por numerales.
-==================================================== /*/
+/* ==================================================== 
+6) Permita al usuario ingresar el nombre de un archivo, genere un nuevo nombre donde los espacios sean reemplazados por guion bajo y la extension por numerales.
+==================================================== */
 
 let archivo = "archivo algoritmos.pdf";
 let ext = 0;
@@ -99,10 +95,9 @@ console.log(archivo.substring(0, final) + extension);
 
 
 
-/*/==================================================== 
-29. El problema es el siguiente, el usuario deberia poder ingresar la longitud de la base de
-una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numerales. 
-====================================================/*/
+/* ==================================================== 
+29. El problema es el siguiente, el usuario deberia poder ingresar la longitud de la base de una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numerales. 
+==================================================== */
 
 const pisos = prompt('Ingrese la longitud de la piramide');
 const estilo = '#'
@@ -129,10 +124,9 @@ console.log(piramide);
 
 
 
-/*/====================================================
-16. Realizar una funcion que tome dos numeros: a, b y devuelva la cantidad de numeros pares
-que hay en el intervalo cerrado [a, b]. Controlar que a <= b.
-====================================================/*/
+/* ====================================================
+16. Realizar una funcion que tome dos numeros: a, b y devuelva la cantidad de numeros pares que hay en el intervalo cerrado [a, b]. Controlar que a <= b.
+==================================================== */
 
 cont = 0;
 function contarPares(a, b) {
@@ -146,24 +140,3 @@ function contarPares(a, b) {
 }console.log(contarPares(1, 10));
 
 
-
-
-
-let numero24 = ''
-let lista24 = []
-while(numero24 != "s"){
-    numero24 = input("24) Ingrese un numero: ")
-    lista24.push(numero24.ToNumber())
-    
-}
-console.log(lista24)
-
-
-/*/ 
-numero24 = ''
-lista24 = []
-while(numero24 != "s"):
-    numero24 = input("24) Ingrese un numero: ")º
-    lista24.append(int(numero24))
-print(lista24)
-/*/

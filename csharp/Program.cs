@@ -2,11 +2,10 @@
 // imprimir "hola mundo" en consola
 Console.WriteLine("Hola Mundo");
 
-/*/====================================================
-7. Permitir ingresar al usuario un numero de un digito. Controlando se haya ingresado dicho
-numero de no mas de 1 digito de longitud, pasarlo a letras y mostrarlo en pantalla.
+/* ====================================================
+7. Permitir ingresar al usuario un numero de un digito. Controlando se haya ingresado dicho numero de no mas de 1 digito de longitud, pasarlo a letras y mostrarlo en pantalla.
 (Ejemplo: Si ingresa 3, se veria como resultado ”tres”).
-====================================================/*/
+==================================================== */
 
 int digito = Convert.ToInt32(Console.ReadLine());
 string[] numLetras = new string[]{"cero","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve"};
@@ -20,25 +19,24 @@ if (digito < 10 && digito > -1) {
 
 
 
-/*/==================================================== 
-12. Realizar un programita que le pida ingresar una frase al usuario y coloque cada letra
-como elemento de una lista.
-====================================================/*/
+/* ==================================================== 
+12. Realizar un programita que le pida ingresar una frase al usuario y coloque cada letra como elemento de una lista.
+==================================================== */
 string frase ="Hola Mundo, esto es csharp";
 char [] lista = frase.ToCharArray(0,frase.Length);
 
-/*/
+/*
 for (int ctr = 0; ctr < lista.Length; ctr++)
 {
     Console.WriteLine("   {0}: {1}", ctr, lista[ctr]);
 }
-/*/
+*/
 
 
 
-/*/ ====================================================
+/* ====================================================
 17. Tirar 20 veces un dado de 6 caras. Mostrar el promedio de esas 20 tiradas. 
-=====================================================/*/
+===================================================== */
 Random rnd = new Random();
 int[] dado= new int[20];
 int i = 0;
@@ -61,6 +59,7 @@ Console.WriteLine("El promedio de las 20 tiradas es: {0}", promedio);
 espacios sean reemplazados por guion bajo y la extension por numerales.
 ==================================================== /*/
 
+
 string archivo = "archivo algoritmos.pdf";
 int final = 0;
 string extension ="";
@@ -80,10 +79,9 @@ Console.WriteLine(archivo.Replace(' ','_')+extension);
 
 
 
-/*/==================================================== 
-29. El problema es el siguiente, el usuario deberia poder ingresar la longitud de la base de
-una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numerales. 
-====================================================/*/
+/* ==================================================== 
+29. El problema es el siguiente, el usuario deberia poder ingresar la longitud de la base de una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numerales. 
+==================================================== */
 
 int pisos = Convert.ToInt32(Console.ReadLine());
 string piramide = "";
@@ -108,8 +106,7 @@ Console.WriteLine(piramide);
 
 
 /*/====================================================
-16. Realizar una funcion que tome dos numeros: a, b y devuelva la cantidad de numeros pares
-que hay en el intervalo cerrado [a, b]. Controlar que a <= b.
+16. Realizar una funcion que tome dos numeros: a, b y devuelva la cantidad de numeros pares que hay en el intervalo cerrado [a, b]. Controlar que a <= b.
 ====================================================/*/
 
 int cont = 0;

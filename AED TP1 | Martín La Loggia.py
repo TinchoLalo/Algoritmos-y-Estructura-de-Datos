@@ -1,10 +1,3 @@
-'''
-@Algoritmos y Estructura de Datos
-@Author: Martín Uriel La Loggia
-@Date: 2022-03-24
-@Title: Trabajo Páctico Nº1
-
-'''
 
 # 1. Crear un programa que escriba ”Hola mundo” en la pantalla.
 print('Hola mundo')
@@ -62,7 +55,7 @@ n = float(input('7) Ingrese otro número: '))
 an = float(input('7) Ingrese otro número: '))
 bn = float(input('7) Ingrese otro número: '))
 
-
+ejA =  5*a + 10*bn
 def a():
     return 5*an + 10*bn
 def b():
