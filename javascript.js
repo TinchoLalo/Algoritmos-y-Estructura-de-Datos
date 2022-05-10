@@ -99,25 +99,25 @@ console.log(archivo.substring(0, final) + extension);
 29. El problema es el siguiente, el usuario deberia poder ingresar la longitud de la base de una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numerales. 
 ==================================================== */
 
-const pisos = prompt('Ingrese la longitud de la piramide');
+let pisos = prompt('Ingrese la longitud de la piramide');
+let base = Math.round(pisos/2);
 const estilo = '#'
 let piramide = '';
 let space = 0;
 let line = 0;
 
+console.log(base);
+for (let p = 0; p < base; p++) {
+    line= p+1
+    space = base-p
 
-for (let p = 0; p < pisos; p++) {
-    line= p
-    space = pisos-p
-    
     for (let s = 0; s < space; s++) {
         piramide += ' ';
     }
     for (let l = 0; l < line; l++) {
-        piramide += estilo +estilo;
+        piramide += estilo + estilo;
     }
     piramide += '\n';
-
 }
 console.log(piramide);
 
@@ -138,5 +138,8 @@ function contarPares(a, b) {
         }
     }return cont
 }console.log(contarPares(1, 10));
+
+
+
 
 

@@ -1,5 +1,9 @@
-
-numero = str(input("Introduce un número en base 2: ")) # entrada  0101011
-def decimal(numero): return int(numero,2)
-print(decimal(numero)) # salida: 43
-
+cont = 0
+def pares(a,b):
+    if a <= b:
+        cont = 0
+        for i in range(a,b+1):
+            if i % 2 == 0:
+                cont += 1
+        return cont
+print('16) ',pares(1,10))

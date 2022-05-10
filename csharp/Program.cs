@@ -6,7 +6,7 @@ Console.WriteLine("Hola Mundo");
 7. Permitir ingresar al usuario un numero de un digito. Controlando se haya ingresado dicho numero de no mas de 1 digito de longitud, pasarlo a letras y mostrarlo en pantalla.
 (Ejemplo: Si ingresa 3, se veria como resultado ”tres”).
 ==================================================== */
-
+Console.WriteLine("7) Ingrese un numero de un digito:");
 int digito = Convert.ToInt32(Console.ReadLine());
 string[] numLetras = new string[]{"cero","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve"};
 
@@ -82,24 +82,22 @@ Console.WriteLine(archivo.Replace(' ','_')+extension);
 /* ==================================================== 
 29. El problema es el siguiente, el usuario deberia poder ingresar la longitud de la base de una piramide y el algoritmo deberia imprimir en pantalla una piriamide de numerales. 
 ==================================================== */
-
-int pisos = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("29) Ingrese longitud de la piramide:");
+decimal pisos = Convert.ToDecimal(Console.ReadLine()); 
+int bases = (int)Math.Round(pisos/2);
 string piramide = "";
 int space = 0;
 int line = 0;
 
 
-for (i = 0; i < pisos; i++) {
-    line= i;
-    space = pisos-i;
+for (i = 0; i < bases; i++) {
+    line= i+1;
+    space = bases-i;
+    piramide += new string(' ',space);
+    piramide += new string('#',line);
+    piramide += new string('#',line);
+    piramide += "\n";
     
-    for (i = 0; i < space; i++) {
-        piramide += ' ';
-    }
-    for (i= 0; i < line; i++) {
-        piramide += "#" + "#";
-    }
-    piramide += '\n';
 
 }
 Console.WriteLine(piramide);
@@ -118,7 +116,7 @@ void contarPares(int a, int b) {
             }
         }
     }
-    Console.WriteLine(cont);
+    Console.WriteLine("16) "+cont);
 }
 contarPares(1,10);
 
