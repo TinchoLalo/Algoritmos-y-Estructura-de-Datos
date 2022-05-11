@@ -95,10 +95,13 @@ print('7) ',raiz_uno(1,2,3))
 '''
 
 def intevalo(n,a,b):
+    return True if n >= a and n <= b else False # operator condicional (ternario)
+    '''
     if n >= a and n <= b:
         return True
     else:
         return False
+    '''
 print('8) ',intevalo(3,1,5))
 
 
