@@ -18,6 +18,13 @@ diccionario = {"nombre":"Juan","edad":20} # Diccionario. Se expresa con dict
 conjunto = {1,2,3,4,5} # Conjunto, no permite objetos iguales. Se expresa con set
 
 
+# Ejemplos:
+cadena = str("Hola mundo")
+entero = int(10)
+booleano = bool(True)
+lista = list[1,2,3,4,5]
+
+
 
 '''==================================================
                 OPERADORES ARITMETICOS
@@ -114,6 +121,16 @@ else : # si la edad es un número negativo
     print('Edad inválida')
     
     
+'''==================================================
+                OPERADOR CONDICIONAL TERNARIO
+=================================================='''
+p1 = "Hola"
+p2 = "Mundo"
+espacio = "si"
+print(p1 + " " + p2 if espacio == 'si' else p1 + p2) 
+# salida: Hola Mundo
+
+
 
 
 '''==================================================
@@ -182,6 +199,79 @@ def max3(a, b,c):
     else:
         return c
 print(max3(3,5,2))
+
+
+
+'''==================================================
+                    CONVENCIONES
+=================================================='''
+''' Se utiliza para llevar un orden en tu código, para que sea más fácil de comprender.
+Son formas de definir variables, funciones, clases, etc. '''
+
+libro_nombre = "SNAKE" # SNAKE CASE 
+miNombre = "CAMEL" # CAMEL CASE
+MiNombre = "PASCAL" # PASCAL CASE
+
+
+
+
+'''==================================================
+                    IMPORTACIONES
+=================================================='''
+
+
+import math # importa la librería math
+import math as m # importa la librería math y la renombra
+import math as m, random as r # importa la librería math y la renombra
+import paquete.modulo  # importa un módulo que está dentro de un paquete
+
+from paquete.modulo1 import * # importa todos los módulos que están dentro de un paquete
+
+
+
+
+
+'''==================================================
+            Métodos de las listas (arrays)
+=================================================='''
+
+
+lista = [1,2,3,4,5] # definimos una lista
+
+lista.append(6) # agregamos un elemento a la lista
+# lista = [1,2,3,4,5,6]
+
+lista.clear() # limpiamos la lista 
+# salida: []
+
+l1 = [1,2,3]
+l2 = [4,5,6]
+l1.extend(l2) # agregamos la lista l2 a la lista l1
+# l1 = [1,2,3,4,5,6]
+
+lista.count(2) # cuenta la cantidad de veces que se repite un elemento en la lista
+# salida: 1
+
+lista.index(3) # devuelve el índice (posición) de un elemento en la lista
+# salida: 2
+
+lista.insert(2, "hola") # inserta un elemento en una posición específica de la lista
+# salida: [1, 2, 'hola', 3, 4, 5]
+
+lista.pop() # elimina el último elemento de la lista
+# salida: 5
+
+lista.remove(4) # elimina el primer elemento que coincida con el valor especificado
+# salida: [1, 2, 3, 5]
+
+lista.reverse() # invierte el orden de los elementos de la lista
+# salida: [5, 4, 3, 2, 1]
+
+deslist = lista.reverse()
+deslist.sort() # ordena la lista
+# salida: [1, 2, 3, 4, 5]
+lista.sort(reverse=True) # ordena la lista de forma descendente
+
 
 
 
