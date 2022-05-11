@@ -156,10 +156,7 @@ p1= input("12) Ingrese una palabra: ")
 p2 = input("12) Ingrese otra palabra: ")
 space= input("12) Ingresar un espacio? (si) o (no): ").lower()
 def concatenar3(p1,p2,space):
-    if space == 'si':
-        return p1 + " " + p2
-    else:
-        return p1 + p2
+    return p1 + " " + p2 if space == 'si' else p1 + p2 # operador condicional (ternario)
 print('12) ',concatenar3(p1,p2, space))
 
 

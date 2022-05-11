@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/Algoritmos y Estructura de Datos.csproj",
+      "projectUniqueName": "/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/C# Program/Algoritmos y Estructura de Datos.csproj",
       "projectName": "Algoritmos y Estructura de Datos",
-      "projectPath": "/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/Algoritmos y Estructura de Datos.csproj",
+      "projectPath": "/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/C# Program/Algoritmos y Estructura de Datos.csproj",
       "packagesPath": "/Users/martinlaloggia/.nuget/packages/",
-      "outputPath": "/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/csharp/obj/",
+      "outputPath": "/Users/martinlaloggia/INGENIERÍA EN SISTEMAS/Algoritmos y Estructura de Datos/C# Program/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/martinlaloggia/.nuget/NuGet/NuGet.Config"

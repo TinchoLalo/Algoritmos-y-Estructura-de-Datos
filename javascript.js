@@ -53,16 +53,14 @@ promedio = dado.reduce((a, b) => a + b);
 console.log(promedio/20);
 
 /*/
+bucle for
 for (let i = 0; i < dado.length; i++) {
-    promedio += dado[i];
-    
+    promedio += dado[i]; 
 }
-/*/
 
-/*/
+funcion normal
 promedio = dado.reduce(function (a, b) {
     return a + b;});
-console.log(promedio/20);
 /*/ 
 
 
@@ -137,9 +135,42 @@ function contarPares(a, b) {
             }
         }
     }return cont
-}console.log(contarPares(1, 10));
+};console.log(contarPares(1, 10));
+
+/* función flecha (arrow function)
+const contarPares2= (a, b)=>{
+    if (a <= b) {
+        for (let i = a; i <= b; i++) {
+            if (i % 2 == 0) {
+                cont++;
+            }
+        }
+    }return cont
+};
+console.log(contarPares2(1, 10));
+*/
 
 
+/*
+12. Crear ahora una segunda funcion, que tome un tercer argumento extra, y haga lo mismo que la funcion del punto anterior, pero esta vez, utilizando el tercer argumento para saber si debe agregar o no un espacio entre medio de las dos palabras a concatenar.
+*/
 
+const p1 = 'Hola'; // prompt('Ingrese la primera palabra');
+const p2 = 'javascript';
+const espacio = confirm('Desea agregar un espacio entre las dos palabras?');
 
+// Operador condicional (ternario)
+function concatenar(p1, p2, espacio) { return espacio ? p1 + ' ' + p2 : p1 + p2; }
+console.log(concatenar(p1, p2, espacio));
 
+/* Función normal
+
+function concatenar2(p1, p2, espacio) {
+    if (espacio) {
+        return p1 + ' ' + p2;
+    }
+    else {
+        return p1 + p2;
+    }
+}
+*/

@@ -120,3 +120,25 @@ void contarPares(int a, int b) {
 }
 contarPares(1,10);
 
+
+
+/*
+12. Crear ahora una segunda funcion, que tome un tercer argumento extra, y haga lo mismo que la funcion del punto anterior, pero esta vez, utilizando el tercer argumento para saber si debe agregar o no un espacio entre medio de las dos palabras a concatenar.
+*/
+
+string pal1 = "Hola";
+string pal2 = "Csharp";
+Console.WriteLine("12) Desea ingresar un espacio (si/no):");
+string? espacio = Console.ReadLine() ?? "no";
+
+void concatenar(string p1, string p2, string espacio) {
+    Console.WriteLine(espacio=="si" ? p1+" "+p2 : p1+p2); // con ternario
+    /*
+    if (espacio == "si") {
+        Console.WriteLine(p1+" "+p2);
+    } else {
+        Console.WriteLine(p1+p2);
+    }
+    */
+}
+concatenar(pal1,pal2,espacio);

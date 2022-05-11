@@ -1,5 +1,5 @@
 # imprimir hola mundo en python en terminal
-print('Hola mundo')
+print('Hola Python')
 
 
 '''
@@ -79,3 +79,39 @@ for i in range(0,pisos):
     space = pisos-i
     # imprimir los pisos
     print(' '*space+'#'*line+'#'*line)
+    
+    
+
+''' 
+16. Realizar una funcion que tome dos numeros: a, b y devuelva la cantidad de numeros pares que hay en el intervalo cerrado [a, b]. Controlar que a <= b.
+'''
+cont = 0
+def pares(a,b):
+    if a <= b:
+        cont = 0
+        for i in range(a,b+1):
+            if i % 2 == 0:
+                cont += 1
+        return cont
+print('16) ',pares(1,10))
+
+
+
+''' 
+12. Crear ahora una segunda funcion, que tome un tercer argumento extra, y haga lo mismo que la funcion del punto anterior, pero esta vez, utilizando el tercer argumento para saber si debe agregar o no un espacio entre medio de las dos palabras a concatenar. ¿Que tipo
+de dato utilizaria para ese tercer argumento?
+'''
+
+
+p1= input("12) Ingrese una palabra: ")
+p2 = input("12) Ingrese otra palabra: ")
+space= input("12) Ingresar un espacio? (si) o (no): ").lower()
+def concatenar3(p1,p2,space):
+    return p1 + " " + p2 if space == 'si' else p1 + p2 # ternario
+    '''
+    if space == 'si':
+        return p1 + " " + p2
+    else:
+        return p1 + p2
+    '''
+print('12) ',concatenar3(p1,p2, space))
