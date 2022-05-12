@@ -105,7 +105,8 @@ if edad > 18 and edad < 30: # and es para que se cumpla la condición si ambas s
     print('Eres mayor de edad y menor de 30 años')
 elif edad > 30 or edad < 18: # or es para que se cumpla la condición si alguna es verdadera
     print('Eres mayor de 30 años o menor de 18 años')
-
+elif not edad > 20: # not es para que se cumpla la condición si es falsa
+    print('No eres mayor de 20 años')
 
 
 '''==================================================
@@ -208,7 +209,7 @@ print(max3(3,5,2))
 ''' Se utiliza para llevar un orden en tu código, para que sea más fácil de comprender.
 Son formas de definir variables, funciones, clases, etc. '''
 
-libro_nombre = "SNAKE" # SNAKE CASE 
+mi_nombre = "SNAKE" # SNAKE CASE 
 miNombre = "CAMEL" # CAMEL CASE
 MiNombre = "PASCAL" # PASCAL CASE
 
