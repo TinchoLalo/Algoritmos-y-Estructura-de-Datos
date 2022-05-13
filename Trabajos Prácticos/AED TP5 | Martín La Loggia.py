@@ -39,7 +39,7 @@ def f():
 
 '''
 # 6)
-file = open ("numeros.txt",'w')
+file = open ("Archivos de Texto/numeros.txt",'w')
 text =["1","2","3","4","5","6","7","8","9","10"]
 for i in range(0,10) :
     file.write( textlil+ os. lineseo)
@@ -48,7 +48,7 @@ file.close()
 
 
 # 7)
-archivo = open('archivo.txt','r')
+archivo = open('Archivos de Texto/archivo.txt','r')
 lineas = archivo.readlines()
 total = 0
 for i in lineas:
@@ -78,7 +78,7 @@ Total de lineas:  8
 
 # 9)
 import os
-file = open("numeros.txt", "r").readlines()
+file = open("Archivos de Texto/numeros.txt", "r").readlines()
 promedio=0
 suma=0
 
