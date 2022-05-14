@@ -1,16 +1,5 @@
 import random
-archivo = open('Archivos de Texto/ahorcado.txt','r')
-linea = archivo.read().splitlines()
-datos = [] # datos del archivo de texto
-num = random.randint(0,9) # numero al azar
-letra = ""
 
-# añadimos las palabras a una lista
-for i in linea:
-	datos.append(i.strip('\n'))
-archivo.close()
-
-# obtenemos la palabra al azar
 print(''' BIENVENIDO AL JUEGO DEL AHORCADO
     |===
     |   '
@@ -20,13 +9,39 @@ print(''' BIENVENIDO AL JUEGO DEL AHORCADO
     |
    === 
       ''')
-intentos = int(input('¿Cuantos intentos quieres?: '))
+
+# tema del ahorcado
+categoria = ['programacion','paises','animales','peliculas']
+tema =  int(input("Elige un tema: \n1. Programación\n2. Países\n3. Animales\n4. Peliculas\nIngrese el número: "))
+tema = categoria[tema-1]
+
+archivo = open('AED TP Ahorcado | Martin La Loggia/'+tema+'.txt','r')
+linea = archivo.read().splitlines()
+datos = [] # datos del archivo de texto
+num = random.randint(0,len(linea)-1) # numero al azar
+letra = ""
+
+# añadimos las palabras a una lista
+for i in linea:
+	datos.append(i.strip('\n'))
+archivo.close()
+
+# obtenemos la palabra al azar y la ocultamos con guiones 
 palabra = datos[num]
-desconocido = palabra[0]+'_'*(len(palabra)-1)
-conocido = desconocido
+desconocido = palabra
+
+for i in range(0,len(palabra)):
+    if (i == 0):
+        desconocido = palabra
+    elif (palabra[i] != ' 'and i != 0):
+       desconocido = desconocido.replace(palabra[i], '_') # reemplazamos en caso que no sea un espacio
+    
+conocido = palabra[0]+desconocido[1:] 
 ganar = False
-# mostrar la primer letra de la palabra
-print(f'La palabra es: {desconocido}')
+
+# mostrar la primer letra de la palabra y pedir los intentos
+intentos = int(input('¿Cuantos intentos quieres?: '))
+print(f'La palabra es: {conocido}')
 
 
 

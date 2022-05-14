@@ -1,11 +1,17 @@
 import random
-import json
-with open('ahorcado.json') as f:
-    datos = json.load(f)
+from urllib.request import urlopen
 
+
+archivo = open('Archivos de Texto/ahorcado.txt','r')
+linea = archivo.read().splitlines()
+datos = [] # datos del archivo de texto
 num = random.randint(0,9) # numero al azar
 letra = ""
 
+# añadimos las palabras a una lista
+for i in linea:
+	datos.append(i.strip('\n'))
+archivo.close()
 
 # obtenemos la palabra al azar
 print(''' BIENVENIDO AL JUEGO DEL AHORCADO

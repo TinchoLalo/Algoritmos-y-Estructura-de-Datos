@@ -1,0 +1,14 @@
+tigre
+jaguar
+leopardo
+delfin
+conejo
+raton
+leon
+elefante
+ballena
+tiburon
+gallina
+aguila
+cocodrilo
+murcielago
