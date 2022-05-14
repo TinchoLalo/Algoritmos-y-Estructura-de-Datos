@@ -191,7 +191,6 @@ que recibio, modificado y ordenado?
 n1 = int(input("15) Ingrese un numero: "))
 n2 = int(input("15) Ingrese otro numero: "))
 lista = [n1,n2]
-
 def ordenar(lista): return sorted(lista)
 print('15) ',ordenar(lista))
 
