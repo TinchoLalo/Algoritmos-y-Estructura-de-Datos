@@ -1,14 +1,11 @@
 import random
-archivo = open('Archivos de Texto/ahorcado.txt','r')
-linea = archivo.read().splitlines()
-datos = [] # datos del archivo de texto
+import json
+with open('ahorcado.json') as f:
+    datos = json.load(f)
+
 num = random.randint(0,9) # numero al azar
 letra = ""
 
-# añadimos las palabras a una lista
-for i in linea:
-	datos.append(i.strip('\n'))
-archivo.close()
 
 # obtenemos la palabra al azar
 print(''' BIENVENIDO AL JUEGO DEL AHORCADO
@@ -44,7 +41,6 @@ def ahorcado(letra,desconocido,palabra):
             if letra== palabra[i]:
                 conocido = conocido[:i]+letra+conocido[i+1:]
         print(conocido)
-        # si la palabra ingresada es igual a la palabra
         if conocido == palabra:
             print("Ganaste!!😀")
             ganar = True
@@ -66,11 +62,10 @@ def ahorcado(letra,desconocido,palabra):
                 if (palabra[p] in conocido):
                     p = random.randint(0,len(palabra))
                 else:
-                    # mostrar la letra en la posición random
                     conocido = conocido[:p]+palabra[p]+conocido[p+1:]
                     print(f"Pista: {conocido}")
                     terminar = True
-        # si perdio todos los intentos y no quiere una pista
+        # si perdio todos los intentos
         if (intentos == 0):
             print("Perdiste🙁")
             print(f"La palabra era: {palabra}")
@@ -81,7 +76,7 @@ def ahorcado(letra,desconocido,palabra):
 
 while ganar == False:
     letra = str(input("Ingrese una letra o la palabra: "))
-    # comprobar si gano si ingresa toda la palabra y es correcta
+    # comprobar si gano o perdio
     if letra == palabra:
         print("Ganaste!!😀")
         ganar = True
