@@ -15,9 +15,10 @@ categoria = ['programacion','paises','animales','peliculas']
 tema =  int(input("Elige un tema: \n1. Programación\n2. Países\n3. Animales\n4. Peliculas\nIngrese el número: "))
 tema = categoria[tema-1]
 
+# abrir el archivo de texto 
 archivo = open('AED TP Ahorcado | Martin La Loggia/'+tema+'.txt','r')
 linea = archivo.read().splitlines()
-datos = [] # datos del archivo de texto
+datos = [] 
 num = random.randint(0,len(linea)-1) # numero al azar
 letra = ""
 

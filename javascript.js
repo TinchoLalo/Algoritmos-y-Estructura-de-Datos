@@ -1,3 +1,43 @@
+/*=============================================
+            Somewhere sometime...
+=============================================*/
+
+class CoderNauta{
+    constructor(props) {
+        this.planet = props.planet;
+        this.name = props.name;
+        this.year = props.year;
+        this.talent = props.talent;
+    }
+
+    getPlanet() {
+        return this.planet;
+    }
+
+}
+// create new instance of CoderNauta
+const Astronaut = new CoderNauta({
+    planet: 'Earth',
+    name: 'Tincho',
+    year: 2022,
+    talent: ['JavaScript', 'HTML', 'CSS']
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // imprimir "hola mundo" en consola
 console.log('Hola Mundo');
 
@@ -15,7 +55,6 @@ if (digito < 10 && digito > -1) {
 else{
     console.log('Numero no valido');
 }
-
 
 
 
@@ -90,7 +129,31 @@ for (let i = 0; i < ext.length; i++) {
 }
 console.log(archivo.substring(0, final) + extension);
 
+class NombreArchivo {
+    constructor(nombre) {
+        this.nombre = nombre;
+    }
+    getNombre() {
+        return this.nombre;
+    }
+    setNombre(nombre) {
+        this.nombre = nombre;
+    }
+    getNombreFinal() {
+        let nombreFinal = '';
+        let nombre = this.getNombre();
+        for (let i = 0; i < nombre.length; i++) {
+            if (nombre[i] == ' ') {
+                nombreFinal += '_';
+            }
+            else {
+                nombreFinal += nombre[i];
+            }
+        }
+        return nombreFinal;
+    }
 
+}
 
 
 /* ==================================================== 
@@ -174,3 +237,7 @@ function concatenar2(p1, p2, espacio) {
     }
 }
 */
+
+
+
+
